@@ -16,7 +16,7 @@ sql_toolkit = SQLDatabaseToolkit(db=datatalk_db, llm=gemini)
 
 
 def get_prompt_template():
-    sys_prompt = sql_system_prompt.format(dialect=sql_toolkit.dialect, top_k="10",
+    sys_prompt = sql_system_prompt.format(dialect=sql_toolkit.dialect,
                                           dynamic_schema=get_full_schema_as_string())
 
 
