@@ -11,6 +11,8 @@ DataTalk is currently deployed on a cloud-hosted Ubuntu Virtual Machine. This do
 - **Hardware Specs:** 2 Core CPU, 4 GB RAM
 - **Networking:** Port `8080` (Streamlit) is open via UFW firewall.
 
+This Ubuntu VM provides a cost-effective environment tailored for a reliable deployment. The 2 Core CPU and 4 GB RAM ensure the containerized PostgreSQL database, FastAPI backend, and Streamlit frontend can run concurrently without facing out-of-memory errors or performance bottlenecks.
+
 ## 🛠 Deployment Steps Taken
 
 ### 1. Environment Preparation
