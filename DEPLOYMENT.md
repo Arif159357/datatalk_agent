@@ -51,7 +51,7 @@ To ensure the application remains running after the SSH session ends, we used `t
 ### 5. Firewall Configuration
 Security was configured using `ufw` to allow external traffic to the frontend only:
 ```bash
-sudo ufw allow 8080/tcp
+sudo ufw allow 8080
 sudo ufw reload
 ```
 
