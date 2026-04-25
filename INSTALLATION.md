@@ -16,8 +16,7 @@ docker-compose up -d
 ```
 This will start:
 - **Postgres**: Accessible on port `5432`
-- **pgAdmin**: Accessible at `http://localhost:5050` (Login: `admin@admin.com` / `admin`)
-
+  
 ## 3. Python Environment Setup
 1. Create a virtual environment:
    ```bash
