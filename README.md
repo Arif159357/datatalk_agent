@@ -11,7 +11,7 @@ DataTalk is an AI-powered analytical agent designed to make the Northwind B2B sa
 ## 📂 Documentation Links
 - [**Local Installation Guide**](./INSTALLATION.md) - Detailed steps for local environment setup.
 - [**Docker Changes**](./DOCKER_CHANGES.md) - Summary of database fixes.
-- [**Deployment Status**](./DEPLOYMENT.md) - Cloud deployment tracking and final live link.
+- [**Deployment Status**](./DEPLOYMENT.md) - Cloud deployment and live link.
 
 ## 🛠 Tech Stack
 - **LLMs:** Google Gemini 3 Pro (Complex Reasoning) & Flash (Utility Tasks)
@@ -25,7 +25,7 @@ DataTalk is an AI-powered analytical agent designed to make the Northwind B2B sa
 
 ### 1. The "Query Analyst" Pattern (Query Intelligence)
 - **Decision:** I implemented a pre-processing step that uses Gemini Flash to "refine" user questions before they hit the SQL Agent.
-- **Trade-off:** This adds a small amount of latency (1-2s), but significantly increases reliability for vague queries like *"compare this year to last."* It’s a trade-off of speed for accuracy.
+- **Trade-off:** This adds a small amount of latency, but significantly increases reliability for vague queries like *"compare this year to last."* It’s a trade-off of speed for accuracy.
 
 ### 2. Schema Scaling
 - **Decision:** The full Northwind schema is provided to the agent context.
