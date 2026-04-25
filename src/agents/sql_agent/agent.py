@@ -71,7 +71,6 @@ class SQLAgentManager:
             graph_triggers = ["graph", "plot", "chart", "diagram", "visualize"]
             if any(word in question.lower() for word in graph_triggers):
                 print("Generating visualization code...")
-                # Call the LLM one more time just for the Python code
                 viz_prompt = f"""
                 The user wants a visualization for this data: {answer}
                 Based on the question: {question}
@@ -79,10 +78,7 @@ class SQLAgentManager:
                 Ensure the code uses 'plt.figure()' and does not use 'plt.show()'.
                 Format: ```python ... ```
                 """
-                # This 'call_model' will generate the Python code block
                 python_code = call_model("google", viz_prompt, "You are a data visualization expert.")
-                
-                # Append the code to your final answer
                 answer[0]['text'] += "\n\n" + python_code
             
             print("Answer:", answer)
